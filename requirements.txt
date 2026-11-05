@@ -1,0 +1,10 @@
+# NYC 311 Service Intelligence — Python dependencies
+# Python 3.10+
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14.0        # parquet support for the processed dataset
+requests>=2.31
+
+# Optional, for the exploratory notebook
+jupyter
+matplotlib>=3.7

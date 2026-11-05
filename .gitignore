@@ -1,0 +1,28 @@
+# Raw API downloads (~1.1 GB) — reproducible via scripts/01_fetch_311_data.py
+data/raw/
+
+# Processed parquet (~hundreds of MB) — reproducible via scripts/02_clean_transform.py
+data/processed/
+
+# Keep the Tableau-ready CSVs in git EXCEPT the row-level sample if it exceeds
+# GitHub comfort; regenerate with scripts/03_create_tableau_extracts.py
+# (currently committed — comment the next line out to exclude it)
+# data/tableau/311_requests_clean_sample.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Tableau local files
+*.twb
+*.twbx
+*.hyper
